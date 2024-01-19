@@ -19,4 +19,7 @@ migrationdown:
 sqlc:
 	sqlc generate
 
+test:
+	go test -v -cover ./...
+
 .PHONY: runcontainer removecontainer createdb dropdb migrationup migrationdown sqlc
